@@ -1,0 +1,31 @@
+#home{
+    background-color: red;
+    margin-top: var(--height_Header);
+    padding: 1rem;
+}
+
+.home__img-container{
+max-width: 200px;
+margin: 0 auto;
+}
+
+.home_img{
+ width: 100%;
+border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.home_title{
+    margin-top: 2rem;
+color: var(--white);
+font-size: 2rem;
+}
+.text_animate{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.home_paragraph{
+    line-height: 1.5;
+}
