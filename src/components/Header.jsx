@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import "./style/header.css"
+import { Link } from 'react-scroll';
 
 const Header = () => {
 
@@ -11,7 +12,7 @@ const Header = () => {
 console.log(barIsActive)
     const menuContainRef = useRef()
     const handleClickOutsideMenu = (event) => {
-       if(event.target.id !== "menu_contain" && event.target.id !== "bx-menu" && barIsActive){
+       if(event.target.id !== "menu"  && barIsActive){
         setBarIsActive(false)
        }
        
@@ -29,18 +30,17 @@ console.log(barIsActive)
     return (
         <header className='header'>
 
-            <i id='bx-menu' className='bx bx-menu' onClick={toggleClass} ></i>
+            <i id='menu' className='bx bx-menu' onClick={toggleClass} ></i>
 
-            <div id='menu_contain' className={`menu_contain ${barIsActive ? "menu_contain-active" : ""}`} ref={menuContainRef}>
-                <ul className='menu_list'>
-                  <li className='menu_list-item' onClick={() => setBarIsActive(false)}><a href="#home">Inicio</a></li>
-                  <li className='menu_list-item' onClick={() => setBarIsActive(false)}><a href="#aboutMe">Sobre mi</a></li>
-                  <li className='menu_list-item' onClick={() => setBarIsActive(false)}><a href="#skills">Habilidades Tecnicas</a></li>
-                  <li className='menu_list-item' onClick={() => setBarIsActive(false)}><a href="#proyects">Proyectos</a></li>
-                  <li className='menu_list-item' onClick={() => setBarIsActive(false)}><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-
+            <div id='menu' className={`menu_contain ${barIsActive ? "menu_contain-active" : ""}`} ref={menuContainRef}>
+                <ul id='menu' className='menu_list'>
+                  <li id='menu' className='menu_list-item' ><Link to='home' smooth={true} duration={500} offset={-100} onClick={() => setBarIsActive(false)}>Inicio</Link></li>
+                  <li id='menu' className='menu_list-item' ><Link to='aboutMe' smooth={true} duration={500} offset={-80} onClick={() => setBarIsActive(false)}>Sobre mi</Link></li>
+                  <li id='menu' className='menu_list-item' ><Link to='skills' smooth={true} duration={500} offset={-80} onClick={() => setBarIsActive(false)}>Habilidades tecnicas</Link></li>
+                  <li id='menu' className='menu_list-item' ><Link to='proyects' smooth={true} duration={500} offset={-80} onClick={() => setBarIsActive(false)}>Proyectos</Link></li>
+                  <li id='menu' className='menu_list-item' ><Link to='contact' smooth={true} duration={500} onClick={() => setBarIsActive(false)}>Contacto</Link></li>
+   </ul>
+    </div>
         </header>
     )
 }
