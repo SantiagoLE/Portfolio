@@ -38,7 +38,7 @@ const Home = () => {
 <p className='home_paragraph'>
 Poseo solidos conocimientos que me permiten afrontar cualquier tipo de desafio y trabajar en todas la etapas de cualquier proyecto, desde el diseño y desarrollo frontend hasta la implementación y administración del backend.
 <br />
-Si estás buscando un desarrollador Full Stack comprometido, creativo y orientado a resultados, no dudes en contactarme. Mi prioridad es la satisfaccion de cliente final, el éxito de tu empresa y mi crecimiento a nivel personal y laboral.
+Si estás buscando un desarrollador Full Stack comprometido, creativo y orientado a resultados, no dudes en contactarme. Mi prioridad es la satisfaccion del cliente final, el éxito de tu empresa y mi crecimiento a nivel personal y laboral.
 </p>
 
 <button className='home_btn' onClick={handleDownload}>Descarga mi CV</button>
