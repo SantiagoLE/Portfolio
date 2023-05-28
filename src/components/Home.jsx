@@ -7,8 +7,8 @@ const Home = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/CVV_Santiago_Loaiza_Escobar.pdf';
-        link.download = 'Santiago_Loaiza_Escobar.pdf';
+        link.href = '/CV_Santiago_Loaiza_Escobar.pdf';
+        link.download = 'CV Santiago Loaiza Escobar.pdf';
         link.click();
       };
     
