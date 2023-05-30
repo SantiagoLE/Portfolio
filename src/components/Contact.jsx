@@ -5,7 +5,7 @@ import "./style/contact.css"
 
 const Contact = () => {
 
-  const { handleSubmit, register, reset } = useForm();
+  const { handleSubmit, register, reset ,  formState:{errors}} = useForm();
 
   const submit = (data) => {
     // Configurar los parámetros para enviar el correo electrónico
@@ -18,8 +18,10 @@ const Contact = () => {
       from_name: data.name,
       from_email: data.email,
       subject: data.subject,
-      message: data.text
+      message: data.message
     };
+
+    console.log(data)
 
     // Enviar el formulario utilizando EmailJS
     emailjs
@@ -36,21 +38,14 @@ const Contact = () => {
   return (
     <section id="contact">
       <form className='contact_form' onSubmit={handleSubmit(submit)}>
-        <div className="form_item">
-          <input id="name" type="text" {...register('name')} placeholder="Empresa / Nombre Completo" />
-        </div>
+        <input id="name" type="text" {...register('name', {required:true})}  placeholder={errors.name ? "Campo requerido" : "Empresa / Nombre Completo"} />
+        
 
-        <div className="form_item">
-          <input id="email" type="email" {...register('email')} placeholder="Correo Electrónico" />
-        </div>
+        <input id="email" type="email" {...register('email', {required:true})}  placeholder={errors.email ? "Campo requerido" : "Correo Electrónico"} />
 
-        <div className="form_item">
-          <input id="subject" type="text" {...register('subject')} placeholder="Asunto" />
-        </div>
+        <input id="subject" type="text" {...register('subject', {required:true})}  placeholder={errors.subject ? "Campo requerido" :"Asunto"} />
 
-        <div className="form_item">
-          <input id="text" type="text" {...register('text')} placeholder="Mensaje" />
-        </div>
+        <textarea id='message' {...register('message', {required:true})} placeholder={errors.message ? "Campo requerido" :"Mensaje"}></textarea>
 
         <button className='contact_btn' type="submit">Enviar</button>
       </form>

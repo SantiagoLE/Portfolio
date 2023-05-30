@@ -13,11 +13,14 @@ function App() {
     <div className="App">
 
  <Header />
-  <Home />
+ <div className='app_components'>
+ <Home />
 <AboutMe/>
 <Skills/>
 <Proyects/>
 <Contact/>
+ </div>
+ 
 
      
 
