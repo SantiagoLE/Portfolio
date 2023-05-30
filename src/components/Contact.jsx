@@ -1,6 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
+import resetHookForm from '../utils/resetHookForm';
 import "./style/contact.css"
 
 const Contact = () => {
@@ -28,7 +29,7 @@ const Contact = () => {
       .send(serviceId, templateId, templateParams, userId)
       .then((response) => {
         console.log('Correo electrónico enviado con éxito', response.text);
-        reset();
+        reset(resetHookForm);
       })
       .catch((error) => {
         console.error('Error al enviar el correo electrónico', error);
