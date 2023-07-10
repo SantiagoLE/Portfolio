@@ -1,5 +1,48 @@
-.aboutMe{
+.aboutMe {
     background-color: blue;
-    height: 500px;
     padding: 1rem;
 }
+
+.aboutMe_title {
+    text-align: center;
+    margin: 1rem 0 1.5rem 0;
+    font-size: 3rem;
+}
+
+.aboutMe_paragraph {
+    line-height: 1.5;
+}
+
+.title {
+    text-align: center;
+margin: 1.7rem 0 1rem 0;
+font-size: 2rem;
+}
+
+.container{
+display: grid;
+justify-content: center;
+gap: 1rem;
+}
+.content{
+    display: flex;
+}
+
+.aboutMe_icon{
+margin-right: 1.3rem;
+font-size: 1.5rem;
+}
+
+.info{
+
+}
+
+.info_instition{
+
+}
+
+.info_program{
+
+}
+
+

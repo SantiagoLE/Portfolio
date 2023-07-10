@@ -15,14 +15,14 @@ console.log(videoState)
 
   return (
     <section id="proyects">
-      Proyects
+     
       <div
         className="card"
         onMouseEnter={() => handleMouseEnter("video1")}
         onMouseLeave={() => handleMouseLeave("video1")}
       >
         {videoState.video1 ? (
-          <video src="./video1.mp4" autoPlay muted loop />
+          <video src="./Clips/video1.webm" autoPlay muted loop />
         ) : (
           "por defecto"
         )}
@@ -33,7 +33,7 @@ console.log(videoState)
         onMouseLeave={() => handleMouseLeave("video2")}
       >
         {videoState.video2 ? (
-          <video src="./video2.mp4" autoPlay muted loop />
+          <video src="./Clips/video2.webm" autoPlay muted loop />
         ) : (
           "por defecto"
         )}

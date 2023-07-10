@@ -31,15 +31,6 @@ const Home = () => {
             </div>
 
 
-<p className='home_paragraph'>
- Soy un apasionado desarrollador Web Full Stack enfocado en la creación de aplicaciones que garantizen la mejor experiencia de usuario, mediante el uso de mi creatividad y habilidades técnicas.
- </p>
-
-<p className='home_paragraph'>
-Poseo solidos conocimientos que me permiten afrontar cualquier tipo de desafio y trabajar en todas la etapas de cualquier proyecto, desde el diseño y desarrollo frontend hasta la implementación y administración del backend.
-<br />
-Si estás buscando un desarrollador Full Stack comprometido, creativo y orientado a resultados, no dudes en contactarme. Mi prioridad es la satisfaccion del cliente final, el éxito de tu empresa y mi crecimiento a nivel personal y laboral.
-</p>
 
 <button className='home_btn' onClick={handleDownload}><i className='bx bx-download'></i> CV</button>
 

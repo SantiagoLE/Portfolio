@@ -1,17 +1,19 @@
 #proyects{
+    width: 100%;
     background-color: blueviolet;
-    height: 500px;
     padding: 1rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .card{
-    width: 200px;
-    aspect-ratio: 1;
-    /* overflow: hidden; */
-    /* position: relative; */
+    /* width: 100%;
+    max-width: 500px; */
+    width: 500px;
+    aspect-ratio: 1.8;
     display: flex;
     justify-content: center;
     align-items: center;

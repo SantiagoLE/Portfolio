@@ -1,55 +1,63 @@
-#contact{
-   background-color: red;
+#contact {
+    width: 100%;
+    background-color: red;
     padding: 1rem;
-    display: flex;
+    display: grid;
     justify-content: center;
 
 }
 
-.contact_form{
-width: 100%;
-max-width: 600px;
-display: grid;
-gap: 1rem;
-background-color: aqua;
+.contac_title {
+    place-self: center;
+}
+
+.contact_form {
+    width: 100%;
+    min-width: 350px;
+    max-width: 600px;
+    display: grid;
+    gap: 1rem;
+    background-color: aqua;
 
 }
 
-#name, #email, #subject{
-width: 100%;
-height: 40px;
-padding-left: 1rem;
-border-radius: 0.5rem;
-border: none;
-font-size: 1.2rem;
+#name,
+#email,
+#subject {
+    width: 100%;
+    height: 40px;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
 }
 
-#email{
-width: 100%;
+#email {
+    width: 100%;
 }
 
-#subject{
-width: 100%;
+#subject {
+    width: 100%;
 }
 
-#message{
-width: 100%;
-min-height: 100px;
-padding: 1rem;
-overflow-y: auto;
-border-radius: 0.5rem;
-border: none;
-font-size: 1.2rem;
+#message {
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    overflow-y: auto;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
 }
 
-.contact_btn{
-width: 100%;
-max-width: 300px;
-height: 40px;
-background-color: red;
-border-radius: 0.5rem;
-/* border: none; */
-place-self: center;
-font-size: 1.2rem;
+.contact_btn {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    background-color: red;
+    border-radius: 0.5rem;
+    /* border: none; */
+    place-self: center;
+    font-size: 1.2rem;
 
 }
