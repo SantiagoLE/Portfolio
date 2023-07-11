@@ -13,10 +13,10 @@
 
 .contact_form {
     width: 100%;
-    min-width: 350px;
-    max-width: 600px;
+    min-width: 350px; 
+    max-width: 600px; 
     display: grid;
-    gap: 1rem;
+       gap: 1rem;
     background-color: aqua;
 
 }

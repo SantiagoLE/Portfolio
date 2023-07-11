@@ -10,29 +10,31 @@ const Home = () => {
         link.href = '/CV_Santiago_Loaiza_Escobar.pdf';
         link.download = 'CV Santiago Loaiza Escobar.pdf';
         link.click();
-      };
-    
+    };
 
-    const name = ["Santiago Loaiza Escobar"]
-    const text= ["Full Stack Developer", "Front-End Developer", "Back-End Developer"]
+
+    const text = ["Full Stack Developer", "Front-End Developer", "Back-End Developer"]
 
     return (
         <section id='home'>
-          
+
 
             <div className='home__img-container'>
-                <img className='home_img' src="/SantiagoLoaizaEscobar.jpg" alt="" />
+                <img className='home_img' src="/Santiago Loaiza Escobar.png" alt="" />
             </div>
 
-            <h2 className='home_title'>¡Hola! Soy Santiago Loaiza Escobar</h2>
+            <div className='home_info-container'>
+                <h2 className='home_title'>¡Hola! Soy Santiago Loaiza Escobar</h2>
 
-            <div className='text_animate'>
-                <ReactTyped strings={text} typeSpeed={100} loop />
+                <div className='text_animate'>
+                    <ReactTyped strings={text} typeSpeed={100} loop />
+                </div>
             </div>
 
 
 
-<button className='home_btn' onClick={handleDownload}><i className='bx bx-download'></i> CV</button>
+
+            <button className='home_btn' onClick={handleDownload}><i className='bx bx-download'></i> CV</button>
 
         </section>
     )
