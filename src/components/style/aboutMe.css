@@ -1,16 +1,20 @@
 .aboutMe {
-    background-color: blue;
-    padding: 1rem;
+    background-color: rgba(16, 16, 20, 0.938);
+    padding: 5rem;
+    margin-top: 1.5rem;
+    color: var(--white);
 }
 
 .aboutMe_title {
     text-align: center;
     margin: 1rem 0 1.5rem 0;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 3rem;
 }
 
 .aboutMe_paragraph {
     line-height: 1.5;
+    font-size: 1.2rem;
 }
 
 .title {
@@ -31,10 +35,11 @@ gap: 1rem;
 .aboutMe_icon{
 margin-right: 1.3rem;
 font-size: 1.5rem;
+color: var(--icon_color);
 }
 
 .info{
-
+font-size: 1.2rem;
 }
 
 .info_instition{
@@ -43,6 +48,18 @@ font-size: 1.5rem;
 
 .info_program{
 
+}
+
+@media (min-width:700px) {
+    .aboutMe_info-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    }
+    
+    .aboutMe-info-content{
+    
+    }
 }
 
 

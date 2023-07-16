@@ -1,5 +1,8 @@
 
 .app_components{
     padding: 0 2rem;
-    background-image: url("/BackgroundApp/Background.gif");
+    background: url("/BackgroundApp/Background.gif");
+    position: relative;
+    overflow: hidden;
     }
+    

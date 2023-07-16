@@ -18,7 +18,6 @@
     display: grid;
        gap: 1rem;
     background-color: aqua;
-
 }
 
 #name,
@@ -59,5 +58,17 @@
     /* border: none; */
     place-self: center;
     font-size: 1.2rem;
+
+}
+
+@media (min-width:700px){
+
+    .contact_form {
+    width: 100%;
+    min-width: 500px; 
+    max-width: 900px; 
+    
+}
+
 
 }

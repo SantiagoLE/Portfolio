@@ -1,5 +1,6 @@
 #portfolio{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
 }
@@ -8,6 +9,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    gap: 1rem;
     margin: 2rem 0;
 }
 
@@ -22,9 +24,9 @@
   }
   
   .btn_active {
-    background-color: red;
+    background-color: var(--icon_color);
   }
 
   .portfolio_btn:hover{
-    transform:scale(1.2) ;
+    transform:scale(1.05) ;
   }

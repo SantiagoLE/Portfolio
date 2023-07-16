@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <section id="contact">
 
-      <h2 className='contac_title'>Formulario de Contacto</h2>
+      <h2 className='contac_title'>FORMULARIO DE CONTACTO</h2>
 
       <form className='contact_form' onSubmit={handleSubmit(submit)}>
         <input id="name" type="text" {...register('name', {required:true})}  placeholder={errors.name ? "Campo requerido" : "Empresa / Nombre Completo"} />
