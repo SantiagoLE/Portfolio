@@ -10,6 +10,9 @@ import { useState } from 'react'
 
 function App() {
 
+  const [darkMode, setDarkMode] = useState(true)
+  console.log(darkMode)
+
   const handleWhatsApp = () => {
     window.open(" https://api.whatsapp.com/send?phone=573148398862", "_blank")
   }
@@ -25,9 +28,13 @@ function App() {
   const [viewMenu, setViewMenu] = useState(false)
 
   return (
-    <div className="App">
+    <div className={`App ${!darkMode  && "ligth"}`}>
 
-      <Header />
+      <Header 
+      setDarkMode={setDarkMode}
+      darkMode={darkMode}
+      
+      />
 
       <div className='app_components'>
         <Home />

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import "./style/header.css"
 import { Link } from 'react-scroll';
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
 
     const [barIsActive, setBarIsActive] = useState(false)
 
@@ -24,8 +24,19 @@ const Header = () => {
     }, [document, barIsActive]);
 
 
+
     return (
         <header className='header'>
+
+            <div className='darkmode_icons-container'>
+                {
+                    darkMode
+                        ? <i className='bx bxs-sun' onClick={() => { setDarkMode(false) }}></i>
+                        : <i className='bx bxs-moon' onClick={() => { setDarkMode(true) }}></i>
+
+                }
+            </div>
+
 
             <i id='menu' className='bx bx-menu' onClick={() => setBarIsActive(!barIsActive)} ></i>
 

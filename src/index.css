@@ -7,10 +7,11 @@
   --back_ground-home: #0D2C33;
   --icon_color:  rgb(6, 125, 161);
   --border_radius-components: 1rem;
-
-
 }
 
+.ligth{
+  --black: white;
+}
 
 *{
     box-sizing: border-box;
