@@ -1,6 +1,5 @@
 #proyects {
     width: 100%;
-    background-color: blueviolet;
     padding: 1rem;
 }
 
@@ -46,12 +45,15 @@
 .card {
     /* width: 100%;
     max-width: 500px; */
-    width: 500px;
+    width: 300px;
     aspect-ratio: 1.8;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: aqua;
+    border-radius: 1rem;
+    border: 2px solid var(--white);
+    overflow: hidden;
 }
 
 .card video {

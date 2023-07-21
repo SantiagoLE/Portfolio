@@ -4,6 +4,9 @@
     padding: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 0 0 var(--border_radius-components) var(--border_radius-components);
+    border: 1px solid var(--white);
+    border-top: none;
   
 }
 

@@ -1,8 +1,11 @@
 #skills {
   width: 100%;
-    background: black;
-    padding: 1rem;
+    /* background-image: url("/public/BackgroundApp/Background.gif"); */
+    padding: 4rem;
     margin-bottom: 5rem;
+    /* border-radius: var(--border_radius-components);
+    border: 2px solid var(--white); */
+    
 }
 
 .skills{
@@ -10,7 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 6rem;
     position: relative;
     right: -500%;
     opacity: 0;
@@ -41,19 +44,19 @@
 
 .img_container {
     width: 100%;
-    max-width: 130px;
+    max-width: 50px;
     display: grid;
     justify-content: center;
- 
+ text-align: center;
 
 }
 
 .img {
-    width: 150px;
+    width: 50px;
     aspect-ratio: 1;
     margin-bottom: 1rem;
+    place-self: center;
     animation: rotation 4s linear infinite;
-
 }
 
 
@@ -77,4 +80,17 @@
     color: var(--white);
     place-self: center;
     font-size: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  
+  .img_container{
+max-width: 110px;
+  }
+
+.img{
+width: 110px;
+}
+
+
 }

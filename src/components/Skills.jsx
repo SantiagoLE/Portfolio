@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./style/skills.css"
-import { set } from 'react-hook-form';
+
 
 
 const Skills = () => {
@@ -44,7 +44,7 @@ const Skills = () => {
   return (
     <section id='skills'>
 
-      <div className={`skills ${setSkillsIsVisible && "slideInRigth"}`}>
+      <div className={`skills ${skillsIsIsVisible && "slideInRigth"}`}>
 
         <div className='img_container'>
           <img className='img' src="/Technologies/Javascript.png" alt="" />

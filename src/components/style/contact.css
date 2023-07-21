@@ -1,34 +1,70 @@
 #contact {
     width: 100%;
-    background-color: red;
-    padding: 1rem;
+    background-color: var(--black);
+    padding: 3rem;
+    margin-top: 2rem;
     display: grid;
     justify-content: center;
+    border: 2px solid var(--white);
+    border-radius: var(--border_radius-components);
+    color: var(--white);
 
 }
 
 .contac_title {
     place-self: center;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+
+.contact_paragraph {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
 }
 
 .contact_form {
     width: 100%;
-    min-width: 350px; 
-    max-width: 600px; 
-    display: grid;
-       gap: 1rem;
-    background-color: aqua;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.7rem;
+    border-radius: var(--border_radius-components);
 }
+
+
+.form_item-container {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.item_title {
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    z-index: 10;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 0 0.5rem;
+    border-radius: 2rem;
+    }
 
 #name,
 #email,
 #subject {
     width: 100%;
-    height: 40px;
+    height: 45px;
     padding-left: 1rem;
     border-radius: 0.5rem;
-    border: none;
+    border: 2px solid var(--white);
     font-size: 1.2rem;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 #email {
@@ -41,34 +77,46 @@
 
 #message {
     width: 100%;
-    min-height: 100px;
+    height: 100px;
     padding: 1rem;
     overflow-y: auto;
     border-radius: 0.5rem;
-    border: none;
+    border: 2px solid var(--white);
     font-size: 1.2rem;
+    resize: none;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .contact_btn {
     width: 100%;
     max-width: 300px;
     height: 40px;
-    background-color: red;
     border-radius: 0.5rem;
-    /* border: none; */
     place-self: center;
-    font-size: 1.2rem;
-
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    border: 2px solid var(--white);
+    background-color: var(--black);
+    color: var(--white);
 }
 
-@media (min-width:700px){
+
+@media (min-width:700px) {
 
     .contact_form {
-    width: 100%;
-    min-width: 500px; 
-    max-width: 900px; 
-    
-}
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .contact_container {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 3rem;
+    }
+
 
 
 }
