@@ -28,14 +28,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     return (
         <header className='header'>
 
-            <div className='darkmode_icons-container'>
-                {
-                    darkMode
-                        ? <i className='bx bxs-sun' onClick={() => { setDarkMode(false) }}></i>
-                        : <i className='bx bxs-moon' onClick={() => { setDarkMode(true) }}></i>
-
-                }
-            </div>
+          
 
 
             <i id='menu' className='bx bx-menu' onClick={() => setBarIsActive(!barIsActive)} ></i>
@@ -48,6 +41,15 @@ const Header = ({ darkMode, setDarkMode }) => {
                     <li id='menu' className='menu_list-item' ><Link to='contact' smooth={true} duration={500} offset={-80} onClick={() => setBarIsActive(false)}>Contacto</Link></li>
 
                 </ul>
+            </div>
+
+            <div className='darkmode_icons-container'>
+                {
+                    darkMode
+                        ? <i className='bx bxs-sun' onClick={() => { setDarkMode(false) }}></i>
+                        : <i className='bx bxs-moon' onClick={() => { setDarkMode(true) }}></i>
+
+                }
             </div>
         </header>
     )

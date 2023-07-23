@@ -4,13 +4,18 @@
   --black: black;
   --height_Header: 70px;
   --white: white;
-  --back_ground-home: #0D2C33;
   --icon_color:  rgb(6, 125, 161);
   --border_radius-components: 1rem;
+  --back_ground-aboutMe: rgba(18, 18, 19, 0.938);
+  --border_color:  rgb(6, 125, 161);
+ 
 }
 
 .ligth{
   --black: white;
+  --white: black;
+  --back_ground-aboutMe: rgba(219, 205, 205, 0.692);
+  --border_color:  rgb(34, 0, 185);
 }
 
 *{

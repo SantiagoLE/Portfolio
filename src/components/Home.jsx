@@ -3,7 +3,7 @@ import ReactTyped from 'react-typed';
 import "./style/home.css"
 
 
-const Home = () => {
+const Home = ({darkMode}) => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
@@ -13,10 +13,16 @@ const Home = () => {
     };
 
 
-    const text = ["Full Stack Developer", "Front-End Developer", "Back-End Developer"]
+    const text = ["Desarollador Full-Stack ", "Desarrollador Front-End", "Desarrolador Back-End"]
+
+const style = {
+      backgroundImage: darkMode
+       ? 'url("/public/BackgroundsComponents/BackgroundHomeDark.jpeg")'
+       : 'url("/public/BackgroundsComponents/BackgroundHomeLigth.jpg")'
+}
 
     return (
-        <section id='home'>
+        <section id='home' style={style}>
 
 
             <div className='home__img-container'>
@@ -34,7 +40,7 @@ const Home = () => {
 
 
 
-            <button className='home_btn' onClick={handleDownload}><i className='bx bx-download'></i> CV</button>
+            <button className='home_btn' onClick={handleDownload}><i class='bx bx-file'></i>DESCARGA CV</button>
 
         </section>
     )

@@ -14,12 +14,12 @@
 }
 
 .portfolio_btn {
-    color: white;
-    background-color: black;
+    color: var(--white);
+    background-color: var(--black);
     transition: background-color 0.5s ease;
     width: 200px;
     font-size: 1.7rem;
-    border: solid 1px white;
+    border: solid 2px var(--white);
     border-radius: var(--border_radius-components);
    
   }

@@ -12,7 +12,7 @@
 	gap: 0.2rem;
 	justify-content: center;
 	border-radius: 1rem;
-	border: 2px solid var(--white);
+   border: 2px solid var( --border_color);
 	position: fixed;
 	bottom: 20px;
 	right: 12px;	
@@ -20,14 +20,29 @@
 	padding-top: 1.5rem;
 }
 
-.bxs-x-circle{
-	background-color: var(--white);
-	border: 1px solid var(--white);
-	color: var(--black);
+.btn_exit{
+	width: 21px;
+	height: 21px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		background-color: var(--black);
+	border: 2px solid var( --border_color);
 	border-radius: 50%;
 position: absolute;
 top: -10px;
-left: 9px;
+left: 7px;
+cursor: pointer;
+}
+
+.x{
+	font-weight: bold;
+	font-size: 0.8rem;
+color: var(--white);
+}
+
+.x:hover{
+	color: var(--icon_color);
 }
 
 .btn_whatsapp, .btn_linkedin, .btn_github{
@@ -45,7 +60,7 @@ color: var(--white);
 	aspect-ratio: 1;
 	position: fixed;
 	bottom: 20px ;
-	right: 20px ;
+	right: 10px ;
 	}
 
 .menssage_icon::before {
@@ -69,6 +84,10 @@ font-size: 2rem;
 	transform: translate(-50%, -55%);
 	font-size: 3rem;
 	font-weight: lighter;
+}
+
+.bxs-message-rounded:hover{
+	filter: blur(1px);
 }
 
 @keyframes copying {

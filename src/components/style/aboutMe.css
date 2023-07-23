@@ -1,10 +1,10 @@
 .aboutMe {
-    background-color: rgba(16, 16, 20, 0.938);
+    background-color: var(--back_ground-aboutMe);
     padding: 5rem;
     margin: 2rem 0;
     color: var(--white);
     border-radius: var(--border_radius-components);
-    border: 2px solid var(--white);
+    border: 2px solid var( --border_color);
 }
 
 .aboutMe_title {

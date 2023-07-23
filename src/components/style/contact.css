@@ -5,7 +5,7 @@
     margin-top: 2rem;
     display: grid;
     justify-content: center;
-    border: 2px solid var(--white);
+    border: 2px solid var(--border_color);
     border-radius: var(--border_radius-components);
     color: var(--white);
 
@@ -61,7 +61,7 @@
     height: 45px;
     padding-left: 1rem;
     border-radius: 0.5rem;
-    border: 2px solid var(--white);
+    border: 2px solid var( --border_color);
     font-size: 1.2rem;
     background-color: var(--black);
     color: var(--white);
@@ -81,7 +81,7 @@
     padding: 1rem;
     overflow-y: auto;
     border-radius: 0.5rem;
-    border: 2px solid var(--white);
+    border: 2px solid var( --border_color);
     font-size: 1.2rem;
     resize: none;
     background-color: var(--black);
@@ -96,9 +96,13 @@
     place-self: center;
     font-size: 1.5rem;
     margin-top: 3rem;
-    border: 2px solid var(--white);
+    border: 2px solid var( --border_color);
     background-color: var(--black);
     color: var(--white);
+}
+
+.contact_btn:hover{
+    color: var(--icon_color);
 }
 
 

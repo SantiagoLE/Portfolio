@@ -1,11 +1,10 @@
 #home {
-   background-image: url("/BackgroundsComponents/BackgroundHomeSmall.jpeg");
     margin-top: var(--height_Header);
     padding: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 0 0 var(--border_radius-components) var(--border_radius-components);
-    border: 1px solid var(--white);
+    border: 2px solid var( --border_color);
     border-top: none;
   
 }
@@ -31,13 +30,13 @@
 .home_title {
     margin-top: 2rem;
     font-size: 3rem;
-color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 5px rgb(197, 191, 191);
+color: var(--white);
+    text-shadow: 2px 2px 5px var(--black);
   }
 
 .text_animate {
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 5px rgb(197, 191, 191);
+color: var(--white);
+    text-shadow: 2px 2px 5px var(--black);
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -51,20 +50,25 @@ color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 500;
     border-radius: 0.5rem;
-    border: none;
+    border: 2px solid var(--border_color);
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
+    background-color: var(--black);
+    color: var(--white);
 }
 
-.bx-download {
+.bx-file {
     font-size: 1.2rem;
+}
+
+.home_btn:hover{
+    color: var(--icon_color);
 }
 
 @media (min-width: 700px) {
     #home {
-        background-image: url("/BackgroundsComponents/BackgroundHomeBig.jpeg");
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 3fr 1fr;

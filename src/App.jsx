@@ -11,7 +11,6 @@ import { useState } from 'react'
 function App() {
 
   const [darkMode, setDarkMode] = useState(true)
-  console.log(darkMode)
 
   const handleWhatsApp = () => {
     window.open(" https://api.whatsapp.com/send?phone=573148398862", "_blank")
@@ -28,16 +27,16 @@ function App() {
   const [viewMenu, setViewMenu] = useState(false)
 
   return (
-    <div className={`App ${!darkMode  && "ligth"}`}>
+    <div className={`App ${!darkMode && "ligth"}`}>
 
-      <Header 
-      setDarkMode={setDarkMode}
-      darkMode={darkMode}
-      
+      <Header
+        setDarkMode={setDarkMode}
+        darkMode={darkMode}
+
       />
 
       <div className='app_components'>
-        <Home />
+        <Home darkMode={darkMode} />
         <AboutMe />
         <Portfolio />
         <Contact />
@@ -48,7 +47,9 @@ function App() {
 
           ? <div className='icons_container'>
 
-            <i className='bx bxs-x-circle' onClick={() => {setViewMenu(false)}}></i>
+            <div className='btn_exit' onClick={() => { setViewMenu(false) }}>
+              <p className='x'>X</p>
+            </div>
 
             <div className="btn_whatsapp" onClick={handleWhatsApp} >
               <i className='bx bxl-whatsapp'></i>

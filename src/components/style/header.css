@@ -14,14 +14,18 @@
 
 
 .darkmode_icons-container{
-    background-color: var(--white);
-    color: var(--black);
+    color: var(--white);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
+    padding: 1px;
     aspect-ratio: 1;
+    font-size: 1.5rem;
+}
+
+.darkmode_icons-container:hover{
+  color: var(--icon_color);
 }
 
 .bx-menu {
@@ -43,7 +47,7 @@
   transition: right 1s;
   top: var(--height_Header);
   right: -300%;
-border-left: 2px solid var(--white);
+border-left: 2px solid var( --border_color);
 }
 
 .menu_contain-active {
@@ -62,6 +66,10 @@ border-left: 2px solid var(--white);
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--white);
+}
+
+.menu_list-item>a:hover{
+  color: var(--icon_color);
 }
 
 
