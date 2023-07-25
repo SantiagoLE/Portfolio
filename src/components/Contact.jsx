@@ -1,5 +1,5 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from "email-js"
 import { useForm } from 'react-hook-form';
 import resetHookForm from '../utils/resetHookForm';
 import "./style/contact.css"
@@ -73,7 +73,7 @@ const Contact = () => {
                     </div>
 
 
-<button className='contact_btn' type="submit">Enviar <i class='bx bxs-paper-plane'></i></button>
+<button className='contact_btn' type="submit">Enviar <i className='bx bxs-paper-plane'></i></button>
 
 
                    

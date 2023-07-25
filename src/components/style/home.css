@@ -6,6 +6,8 @@
     border-radius: 0 0 var(--border_radius-components) var(--border_radius-components);
     border: 2px solid var( --border_color);
     border-top: none;
+    position: relative;
+    z-index: 1;
   
 }
 

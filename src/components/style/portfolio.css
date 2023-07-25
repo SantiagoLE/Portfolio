@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .portfolio_btn-container{

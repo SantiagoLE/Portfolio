@@ -5,6 +5,8 @@
     color: var(--white);
     border-radius: var(--border_radius-components);
     border: 2px solid var( --border_color);
+    position: relative;
+    z-index: 1;
 }
 
 .aboutMe_title {

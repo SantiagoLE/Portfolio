@@ -4,11 +4,15 @@ import Home from './components/Home'
 import Header from './components/Header'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
+import Particles from 'react-tsparticles'
+import particlesConfig from './utils/particlesConfig'
+import { loadFull } from 'tsparticles'
 
 
 
 function App() {
+
 
   const [darkMode, setDarkMode] = useState(true)
 
@@ -26,8 +30,27 @@ function App() {
 
   const [viewMenu, setViewMenu] = useState(false)
 
+
+  const particlesInit = useCallback((engine) => {
+    loadFull(engine)
+  }, [darkMode])
+
+  const particlesConfigWithColor = {
+    ...particlesConfig,
+    particles: {
+      ...particlesConfig.particles,
+      color: {
+        ...particlesConfig.particles.color,
+        value: darkMode ? '#ffffff' : '#000000',
+      },
+    },
+  };
+
+
   return (
     <div className={`App ${!darkMode && "ligth"}`}>
+
+
 
       <Header
         setDarkMode={setDarkMode}
@@ -41,6 +64,8 @@ function App() {
         <Portfolio />
         <Contact />
       </div>
+
+     
 
       {
         viewMenu
@@ -69,7 +94,10 @@ function App() {
           </div>
       }
 
-
+<Particles style={{position: "absoluted", zIndex: "-1"}}
+        init={particlesInit}
+        options={particlesConfigWithColor}
+      />
 
 
     </div>

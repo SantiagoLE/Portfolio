@@ -40,7 +40,7 @@ const style = {
 
 
 
-            <button className='home_btn' onClick={handleDownload}><i class='bx bx-file'></i>DESCARGA CV</button>
+            <button className='home_btn' onClick={handleDownload}><i className='bx bx-file'></i>DESCARGA CV</button>
 
         </section>
     )

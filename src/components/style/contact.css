@@ -8,7 +8,8 @@
     border: 2px solid var(--border_color);
     border-radius: var(--border_radius-components);
     color: var(--white);
-
+    position: relative;
+z-index: 1;
 }
 
 .contac_title {
