@@ -68,6 +68,10 @@ border-left: 2px solid var( --border_color);
   color: var(--white);
 }
 
+.active{
+  background-color: red;
+}
+
 .menu_list-item>a:hover{
   color: var(--icon_color);
 }

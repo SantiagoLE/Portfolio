@@ -7,8 +7,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     const [barIsActive, setBarIsActive] = useState(false)
 
 
-
-    useEffect(() => {
+useEffect(() => {
 
         const handleClickOutsideMenu = (event) => {
             if (event.target.id !== "menu" && barIsActive) {
@@ -24,6 +23,13 @@ const Header = ({ darkMode, setDarkMode }) => {
     }, [document, barIsActive]);
 
 
+    const [activeLink, setActiveLink] = useState()
+    console.log(activeLink)
+
+const handleClickLink = (link) => {
+setActiveLink(link)
+}
+
 
     return (
         <header className='header'>
@@ -35,10 +41,10 @@ const Header = ({ darkMode, setDarkMode }) => {
 
             <div id='menu' className={`menu_contain ${barIsActive && "menu_contain-active"}`} >
                 <ul id='menu' className='menu_list'>
-                    <li id='menu' className='menu_list-item' ><Link to='home' smooth={true} duration={500} offset={-100} onClick={() => setBarIsActive(false)}>Inicio</Link></li>
-                    <li id='menu' className='menu_list-item' ><Link to='aboutMe' smooth={true} duration={500} offset={-80} onClick={() => setBarIsActive(false)}>Sobre mi</Link></li>
-                    <li id='menu' className='menu_list-item' ><Link to='portfolio' smooth={true} duration={500} offset={-80} onClick={() => setBarIsActive(false)}>Portafolio</Link></li>
-                    <li id='menu' className='menu_list-item' ><Link to='contact' smooth={true} duration={500} offset={-80} onClick={() => setBarIsActive(false)}>Contacto</Link></li>
+                    <li id='menu' className='menu_list-item' ><Link to='home' className={`${activeLink === "home" && "active"}`} smooth={true} duration={500} offset={-100} spy={true} onClick={() => {setBarIsActive(false) ; handleClickLink("home")}}>Inicio</Link></li>
+                    <li id='menu' className='menu_list-item' ><Link to='aboutMe' className={`${activeLink === "aboutMe" && "active"}`} smooth={true} duration={500} offset={-70} spy={true} onClick={() => {setBarIsActive(false) ; handleClickLink("aboutMe")}}>Sobre mi</Link></li>
+                    <li id='menu' className='menu_list-item' ><Link to='portfolio' className={`${activeLink === "portfolio" && "active"}`} smooth={true} duration={500} offset={-50} spy={true} onClick={() => {setBarIsActive(false) ; handleClickLink("portfolio")}}>Portafolio</Link></li>
+                    <li id='menu' className='menu_list-item' ><Link to='contact' className={`${activeLink === "contact" && "active"}`} smooth={true} duration={500} offset={-80} spy={true} onClick={() => {setBarIsActive(false) ; handleClickLink("contact")}}>Contacto</Link></li>
 
                 </ul>
             </div>
