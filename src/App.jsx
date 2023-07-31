@@ -51,7 +51,6 @@ function App() {
     <div className={`App ${!darkMode && "ligth"}`}>
 
 
-
       <Header
         setDarkMode={setDarkMode}
         darkMode={darkMode}
@@ -98,7 +97,6 @@ function App() {
         init={particlesInit}
         options={particlesConfigWithColor}
       />
-
 
     </div>
   )

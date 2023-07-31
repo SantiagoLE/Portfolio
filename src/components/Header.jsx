@@ -16,9 +16,17 @@ useEffect(() => {
             }
         }
 
+        const handleScroll = () => {
+         
+        }
+
         document.addEventListener('click', handleClickOutsideMenu);
+        document.addEventListener('scroll', handleScroll);
+
+
         return () => {
             document.removeEventListener('click', handleClickOutsideMenu);
+            document.removeEventListener('scroll', handleScroll);
         }
     }, [document, barIsActive]);
 
@@ -27,7 +35,7 @@ useEffect(() => {
     console.log(activeLink)
 
 const handleClickLink = (link) => {
-setActiveLink(link)
+// setActiveLink(link)
 }
 
 
