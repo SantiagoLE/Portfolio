@@ -1,84 +1,97 @@
 .app_components {
-	padding: 0 2rem 2rem 2rem;
+	padding: 0 1rem 1rem 1rem;
 	background-color: var(--black);
 	position: relative;
 	overflow: hidden;
 }
 
-.icons_container{
+@media (min-width: 700px) {
+
+	.app_components {
+		padding: 0 2rem 2rem 2rem;
+	}
+}
+
+.icons_container {
 	width: 40px;
 	background-color: var(--black);
 	display: grid;
 	gap: 0.2rem;
 	justify-content: center;
 	border-radius: 1rem;
-   border: 2px solid var( --border_color);
+	border: 2px solid var(--icon_color);
 	position: fixed;
 	bottom: 20px;
-	right: 12px;	
+	right: 12px;
 	color: var(--white);
 	padding-top: 1.5rem;
 	z-index: 1;
 }
 
-.btn_exit{
+.btn_exit {
 	width: 21px;
 	height: 21px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-		background-color: var(--black);
-	border: 2px solid var( --border_color);
+	background-color: var(--black);
+	border: 2px solid var(--icon_color);
 	border-radius: 50%;
-position: absolute;
-top: -10px;
-left: 7px;
-cursor: pointer;
+	position: absolute;
+	top: -10px;
+	left: 7px;
+	cursor: pointer;
 }
 
-.x{
+.x {
 	font-weight: bold;
 	font-size: 0.8rem;
-color: var(--white);
+	color: var(--white);
 }
 
-.x:hover{
+.x:hover {
 	color: var(--icon_color);
 }
 
-.btn_whatsapp, .btn_linkedin, .btn_github{
-width: 100%;
-color: var(--white);
+.btn_whatsapp,
+.btn_linkedin,
+.btn_github {
+	width: 100%;
+	color: var(--white);
+	font-size: 30px;
 }
 
 
-.bxl-whatsapp, .bxl-linkedin, .bxl-github {
-	font-size: 30px;
+.bxl-whatsapp:hover,
+.bxl-linkedin:hover,
+.bxl-github:hover {
+	color: var(--icon_color);
+	
 }
 
 .menssage_icon {
 	width: 40px;
 	aspect-ratio: 1;
 	position: fixed;
-	bottom: 20px ;
-	right: 10px ;
+	bottom: 20px;
+	right: 10px;
 	cursor: pointer;
 	z-index: 1;
-	}
+}
 
 .menssage_icon::before {
-	content: "";	
-font-size: 2rem;
-	color: var(--black);	
+	content: "";
+	font-size: 2rem;
+	color: var(--black);
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -100%) ;
+	transform: translate(-50%, -100%);
 	opacity: 1;
 	animation: copying 2s infinite;
 }
 
-.bxs-message-rounded{
+.bxs-message-rounded {
 	z-index: -1;
 	color: var(--white);
 	position: absolute;
@@ -89,11 +102,11 @@ font-size: 2rem;
 	font-weight: lighter;
 }
 
-.bxs-message-rounded:hover{
+.bxs-message-rounded:hover {
 	filter: blur(1px);
 }
 
-Particles{
+Particles {
 	position: relative;
 	z-index: -1;
 }
@@ -101,30 +114,30 @@ Particles{
 @keyframes copying {
 	0% {
 		content: ".";
-	
+
 	}
 
 	25% {
 		content: ".";
-	
+
 	}
 
 	50% {
 		content: "..";
-	
+
 	}
 
 	75% {
 		content: "...";
-	opacity: 1;
-	
+		opacity: 1;
+
 
 	}
 
 	100% {
 		content: "...";
 		opacity: 0;
-		
-	
+
+
 	}
 }

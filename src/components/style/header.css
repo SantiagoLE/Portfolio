@@ -35,8 +35,12 @@
   z-index: 1;
 }
 
+.bx-menu:hover {
+  color: var(--icon_color);
+}
+
 .menu_contain {
-  background-color: var(--icon_color);
+  background: var(--menu_background);
   width: 45%;
   height: 100vh;
   display: flex;
@@ -47,7 +51,7 @@
   transition: right 1s;
   top: var(--height_Header);
   right: -300%;
-  border-left: 2px solid var(--border_color);
+  /* border-left: 2px solid var(--icon_color); */
 }
 
 .menu_contain-active {
@@ -76,7 +80,7 @@
   left: 0;
   height: 2px;
   width: 0;
-  background: var(--icon_color);
+  background-color: var(--icon_color);
   transition: 400ms ease all;
 }
 
@@ -85,7 +89,7 @@
   transition: 800ms ease all;
 }
 
-.active{
+.active {
   width: 100%;
 }
 
@@ -114,7 +118,7 @@
 
 
   .menu_contain {
-    background-color: transparent;
+    background: transparent;
     flex-direction: column;
     position: static;
     width: auto;

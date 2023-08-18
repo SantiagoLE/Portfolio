@@ -5,7 +5,6 @@ const AboutMe = () => {
   return (
     <section className='aboutMe' id='aboutMe'>
       <h2 className='aboutMe_title'>SOBRE MI</h2>
-      <button className="custom-btn btn-5"><span>Read More</span></button>
       <p className='aboutMe_paragraph'>
         Soy un apasionado desarrollador Web Full Stack enfocado en la creación de aplicaciones que garantizen la mejor experiencia de usuario, mediante el uso de mi creatividad y habilidades técnicas.
       </p>

@@ -41,7 +41,7 @@ function App() {
       ...particlesConfig.particles,
       color: {
         ...particlesConfig.particles.color,
-        value: darkMode ? '#ffffff' : '#000000',
+        value: darkMode ? '#ffff' : '#000000',
       },
     },
   };

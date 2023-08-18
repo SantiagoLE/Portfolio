@@ -52,11 +52,12 @@
 }
 
 .img {
-    width: 50px;
+    width: 70px;
     aspect-ratio: 1;
     margin-bottom: 1rem;
     place-self: center;
     animation: rotation 4s linear infinite;
+    background-color: transparent;
 }
 
 

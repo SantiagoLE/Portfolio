@@ -1,10 +1,10 @@
 .aboutMe {
-    background-color: var(--back_ground-aboutMe);
+    background-color: var(--background-components);
     padding: 3rem;
     margin: 2rem 0;
     color: var(--white);
     border-radius: var(--border_radius-components);
-    border: 2px solid var( --border_color);
+    border: 2px solid var( --icon_color);
     position: relative;
     z-index: 1;
 }

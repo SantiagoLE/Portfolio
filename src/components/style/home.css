@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 0 0 var(--border_radius-components) var(--border_radius-components);
-    border: 2px solid var( --border_color);
+    border: 2px solid var( --icon_color);
     border-top: none;
     position: relative;
     z-index: 1;
@@ -52,7 +52,7 @@ color: var(--white);
     font-size: 1rem;
     font-weight: 500;
     border-radius: 0.5rem;
-    border: 2px solid var(--border_color);
+    border: 2px solid var(--icon_color);
     display: flex;
     gap: 0.5rem;
     justify-content: center;

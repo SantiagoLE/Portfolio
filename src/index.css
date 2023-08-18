@@ -4,18 +4,18 @@
   --black: black;
   --height_Header: 70px;
   --white: white;
-  --icon_color:  rgb(6, 125, 161);
+  --icon_color:   rgb(4, 172, 223);
   --border_radius-components: 1rem;
-  --back_ground-aboutMe: rgba(18, 18, 19, 0.877);
-  --border_color:  rgb(6, 125, 161);
- 
+  --background-components: rgba(18, 18, 19, 0.877);
+ --menu_background:   linear-gradient(to right, rgba(53,69,148,1) 0%, rgba(43,50,87,1) 31%, rgba(29,36,71,1) 55%, rgba(15,24,71,1) 78%, rgba(1,8,44,1) 100%);
 }
 
 .ligth{
   --black: white;
   --white: black;
-  --back_ground-aboutMe: rgba(219, 205, 205, 0.692);
-  --border_color:  rgb(34, 0, 185);
+  --background-components: rgba(255, 255, 255, 0.705);
+  --icon_color:   rgb(97, 97, 107);
+  --menu_background: linear-gradient(to right, rgb(197, 233, 241) 0%, rgba(173,224,237,1) 15%, rgba(173,224,237,1) 35%, rgba(144,203,219,1) 71%, rgba(117,178,196,1) 100%);
 }
 
 *{
